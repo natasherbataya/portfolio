@@ -13,70 +13,51 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="general-container">
-        <div class="flex-menu">
-          <div class="header-logo">
-            <p class="logo">orlov</p>
-          </div>
-          <nav>
-            <ul class="header-menu">
-              <li><a class="menu-item" href="#portfolio">портфолио</a></li>
-              <li><a class="menu-item" href="#competencies">компетенции</a></li>
-              <li><a class="menu-item" href="#services">услуги</a></li>
-              <li><a class="menu-item" href="#contacts">контакты</a></li>
-            </ul>
-          </nav>
-        </div>
+        <a class="logo" href="">orlov</a>
+        <nav>
+          <ul class="menu">
+            <li><a class="menu-item" href="#portfolio">портфолио</a></li>
+            <li><a class="menu-item" href="#competencies">компетенции</a></li>
+            <li><a class="menu-item" href="#services">услуги</a></li>
+            <li><a class="menu-item" href="#contacts">контакты</a></li>
+          </ul>
+        </nav>
+        <p class="description-subtitle" >Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+        повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
+        <h1 class="description-title" >Привет, я Саша — фронтенд разрaботчик и дизайнер сайтов</h1>
       </div>
     </header>
-
-    <main>
-      <section class="general-photo">
-        <div class="general-container main-photo-container">
-          <p class="subtitle-photo">
-            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
-            повышают престиж компании и позволяют выделиться на фоне конкурентов
-          </p>
-          <h1 class="title-photo">
-            Привет, я Саша — фронтенд разарботчик и дизайнер сайтов
-          </h1>
-        </div>
-      </section>
-
-      <section class="general-container projects-container">
-        <h2 id="portfolio" class="title-projects">Самые свежие проекты</h2>
+    
+      <section class="projects-container general-container">
+        <h2 id="portfolio" class="projects-title">Самые свежие проекты</h2>
         <ul>
-          <li class="img-project">
-            <h3 class="subtitle-project">Realhome</h3>
-            <p class="text-project">дизайн,верстка, настройка</p>
+          <li class="project-img">
+            <h3 class="project-subtitle">Realhome</h3>
+            <p class="project-description">дизайн,верстка, настройка</p>
             <img src="resources/realhome.png" alt="Проект realhome" />
           </li>
-          <li class="img-project">
-            <h3 class="subtitle-project">GLASS</h3>
-            <p class="text-project">разработка интерфейса</p>
+          <li class="project-img">
+            <h3 class="project-subtitle">GLASS</h3>
+            <p class="project-description">разработка интерфейса</p>
             <img src="resources/glass.png" alt="Проект glass" />
           </li>
-          <li class="img-project">
-            <h3 class="subtitle-project">Fesiyen</h3>
-            <p class="text-project">разработка интерфейса</p>
+          <li class="project-img">
+            <h3 class="project-subtitle">Fesiyen</h3>
+            <p class="project-description">разработка интерфейса</p>
             <img src="resources/fesiyen.png" alt="Проект fesiyen" />
           </li>
         </ul>
-        <a class="link-projects" href="#">Смотреть все проекты</a>
+        <a class="projects-link" href="#">Смотреть все проекты</a>
       </section>
-
+      
       <section class="general-container">
         <h2 id="competencies" class="competencies-title">Мои компетенции</h2>
         <ul>
           <li class="competence-item">
-            <!-- <img
-              class="img-box icon-html"
-              src="resources/html.png"
-              alt="элемент html в зеленом квадрате "
-            /> -->
             <h3 class="competence-subtitle before-html">HTML и CSS</h3>
-            <p class="competence-text">
+                <p class="competence-description">
               это основа фронтенд разработки. Умение создавать и правильно
               структурировать HTML-документы, а также применять стили к этим
               документам на CSS, является обязательным навыком для каждого
@@ -84,13 +65,8 @@
             </p>
           </li>
           <li class="competence-item">
-            <!-- <img
-              class="img-box icon-javascript"
-              src="resources/javascript.png"
-              alt="элемент javascript в зеленом квадрате"
-            /> -->
             <h3 class="competence-subtitle before-js">JavaScript</h3>
-            <p class="competence-text">
+            <p class="competence-description">
               это язык программирования, который используется для создания
               динамического и интерактивного пользовательского интерфейса.
               Хороший фронтенд разработчик должен быть знаком с основами
@@ -99,15 +75,10 @@
             </p>
           </li>
           <li class="competence-item">
-            <!-- <img
-              class="img-box icon-phone"
-              src="resources/library.png"
-              alt="элемент телефон в зеленом квадрате "
-            /> -->
             <h3 class="competence-subtitle before-library">
               Работа с библиотеками и фреймворками
             </h3>
-            <p class="competence-text">
+            <p class="competence-description">
               фронтенд разработчики должны быть знакомы с различными
               библиотеками и фреймворками, такими как React, Angular, Vue и
               другими. Умение использовать готовые решения, адаптировать их под
@@ -116,15 +87,10 @@
             </p>
           </li>
           <li class="competence-item">
-            <!-- <img
-              class="img-box icon-adaptiv"
-              src="resources/adaptiv.png"
-              alt="элемент адаптив в зеленом квадрате "
-            /> -->
             <h3 class="competence-subtitle before-adaptiv">
               Разработка для мобильных <br />устройств и адаптивная верстка
             </h3>
-            <p class="competence-text">
+            <p class="competence-description">
               фронтенд разработчики должны быть знакомы с различными
               библиотеками и фреймворками, такими как React, Angular, Vue и
               другими. Умение использовать готовые решения, адаптировать их под
@@ -144,7 +110,7 @@
             <img src="resources/development.png" alt="разработка" />
             <div class="service-background">
               <h3 class="service-subtile">Разработка сайта под ключ</h3>
-              <p class="service-text">
+              <p class="service-description">
                 Это создание дизайн веб-сайтов, созданный для удобства
                 пользователя и решения бизнес-задач <br />
                 Сайты должны быть понятными и удобными, ведь чем понятнее сайт,
@@ -156,7 +122,7 @@
             <img src="resources/website_ layout.png" alt="верстка" />
             <div class="service-background">
               <h3 class="service-subtile">Верстка сайтов</h3>
-              <p class="service-text">
+              <p class="service-description">
                 Это процесс создания HTML-документов и применения к ним стилей
                 на CSS. Фронтенд разработчик может помочь создать
                 привлекательный и удобный интерфейс для вашего сайта
@@ -167,7 +133,7 @@
             <img src="resources/mob_interface.png" alt="интерфейс" />
             <div class="service-background">
               <h3 class="service-subtile">Разработка мобильного интерфейса</h3>
-              <p class="service-text">
+              <p class="service-description">
                 Это процесс создания интерактивных элементов на странице с
                 помощью JavaScript. Фронтенд разработчик может помочь создать
                 динамический и удобный пользовательский интерфейс для вашего
@@ -178,12 +144,12 @@
         </ul>
       </section>
 
-      <section id="contacts" class="contacts">
-        <div class="contacts-wrapper">
+      <section id="contacts" class=" contacts">
+        <div class="general-container contacts-wrapper">
           <p class="contacts-text">для связи:</p>
           <a class="contact-link" href="#">instagram</a>
-          <a class="contact-link" href="#">telegram</a>
-          <a class="contact-link" href="#">mail</a>
+          <a class="contact-link" href="http://t.me/NataSherbataya">telegram</a>
+          <a class="contact-link" href="mailto:nata@gmail.ru">mail</a>
         </div>
       </section>
     </main>
