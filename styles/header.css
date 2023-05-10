@@ -1,5 +1,4 @@
 .header {
-  /* position: relative; */
   height: 765px;
   background-image: url(../resources/photodeveloper.png);
   background-repeat: no-repeat;
@@ -15,8 +14,6 @@
 }
 
 .logo {
-  /* position: absolute;
-  top: 36px; */
   display: block;
   font-weight: 700;
   font-size: 39px;

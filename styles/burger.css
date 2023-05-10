@@ -60,7 +60,6 @@
 .burger__nav-link {
   font-size: 25px;
   line-height: 32px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
@@ -75,7 +74,6 @@
 .burger__contact-text {
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: -0.03em;
   color: #ffffff;
   opacity: 0.5;
 }
@@ -83,7 +81,6 @@
 .burger__contact-link {
   font-size: 20px;
   line-height: 32px;
-  letter-spacing: -0.03em;
   color: #ffffff;
   text-decoration: none;
 }

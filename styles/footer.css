@@ -21,7 +21,6 @@
 .footer-title {
   font-size: 22px;
   line-height: 30px;
-  letter-spacing: -0.03em;
   color: #000000;
 }
 
@@ -42,7 +41,6 @@
 .footer-subtitle {
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #000000;
   opacity: 0.5;
 }

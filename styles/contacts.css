@@ -20,7 +20,6 @@
   margin-bottom: 60px;
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
   color: #ffffff;
 }
 
@@ -51,7 +50,6 @@
 
 .contacts-btn {
   width: 450px;
-  font-family: "IBM Plex Mono";
   font-size: 22px;
   line-height: 70px;
   background: #1bff07;
