@@ -13,52 +13,106 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header mb-150">
       <div class="general-container">
-        <a class="logo" href="">orlov</a>
-        <nav>
-          <ul class="menu">
-            <li><a class="menu-item" href="#portfolio">портфолио</a></li>
-            <li><a class="menu-item" href="#competencies">компетенции</a></li>
-            <li><a class="menu-item" href="#services">услуги</a></li>
-            <li><a class="menu-item" href="#contacts">контакты</a></li>
-          </ul>
-        </nav>
-        <p class="description-subtitle" >Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
-        повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
-        <h1 class="description-title" >Привет, я Саша — фронтенд разрaботчик и дизайнер сайтов</h1>
+        <div class="header-inner">
+          <a class="logo" href="">orlov</a>
+          <nav>
+            <ul class="menu">
+              <li><a class="menu-item" href="#portfolio">портфолио</a></li>
+              <li><a class="menu-item" href="#competencies">компетенции</a></li>
+              <li><a class="menu-item" href="#services">услуги</a></li>
+              <li><a class="menu-item" href="#contacts">контакты</a></li>
+            </ul>
+          </nav>
+          <button class="js-burger-btn burger-btn"></button>
+          <p class="description-subtitle">
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+            повышают престиж компании и позволяют выделиться на фоне конкурентов
+          </p>
+          <h1 class="description-title">
+            Привет, я Саша — фронтенд разрaботчик и дизайнер сайтов
+          </h1>
+        </div>
+        
+      </div>
+
+      <div class="js-burger burger">
+        <div class="burger__content">
+          <a class="logo_burger" href="">orlov</a>
+          <nav>
+            <ul class="burger__nav">
+              <li><a class="burger__nav-link" href="#portfolio">портфолио</a></li>
+              <li><a class="burger__nav-link" href="#competencies">компетенции</a></li>
+              <li><a class="burger__nav-link" href="#services">услуги</a></li>
+              <li><a class="burger__nav-link" href="#contacts">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="burger__contacts js-burger__content">
+            <p class="burger__contact-text">для связи:</p>
+
+            <a class="burger__contact-link" target="_blank" href="#" >mail</a>
+            <a class="burger__contact-link" target="_blank" href="http://t.me/NataSherbataya">telegram</a>
+            <a class="burger__contact-link" target="_blank" href="#">instagram</a>
+         
+          </div>
+        </div>
       </div>
     </header>
-    
-      <section class="projects-container general-container">
+
+    <section class="general-container mb-150">
         <h2 id="portfolio" class="projects-title">Самые свежие проекты</h2>
         <ul>
-          <li class="project-img">
-            <h3 class="project-subtitle">Realhome</h3>
-            <p class="project-description">дизайн,верстка, настройка</p>
-            <img src="resources/realhome.png" alt="Проект realhome" />
+          <li class="project-card">
+            <button class="project_btn">дизайн интерьера</button>
+            <h3 class="project-subtitle">Метрика</h3>
+            <p class="project-description">верстка, настройка</p>
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcset="resources/metrika_mob.png"
+              />
+              <img class="project-img" src="resources/metrika.png" alt="Проект metrika" />
+            </picture>
+            
           </li>
-          <li class="project-img">
-            <h3 class="project-subtitle">GLASS</h3>
-            <p class="project-description">разработка интерфейса</p>
-            <img src="resources/glass.png" alt="Проект glass" />
+          <li class="project-card">
+            <button class="project_btn">презентация продукта</button>
+            <h3 class="project-subtitle">Nothing</h3>
+            <p class="project-description">верстка, настройка</p>
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcset="resources/nothing_mob.png"
+              />
+              <img class="project-img" src="resources/nothing.png" alt="Проект nothing" />
+            </picture>
+            
           </li>
-          <li class="project-img">
-            <h3 class="project-subtitle">Fesiyen</h3>
-            <p class="project-description">разработка интерфейса</p>
-            <img src="resources/fesiyen.png" alt="Проект fesiyen" />
+          <li class="project-card">
+            <button class="project_btn">заказ путешествий</button>
+            <h3 class="project-subtitle">TOPTRIP</h3>
+            <p class="project-description">верстка</p>
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcset="resources/toptrip_mob.png"
+              />
+              <img class="project-img" src="resources/toptrip.png" alt="Проект toptrip" />
+            </picture>
+            
           </li>
         </ul>
         <a class="projects-link" href="#">Смотреть все проекты</a>
       </section>
       
-      <section class="general-container">
+      <section class="general-container mb-150">
         <h2 id="competencies" class="competencies-title">Мои компетенции</h2>
-        <ul>
+        <ul class="competencies__wrapper">
           <li class="competence-item">
             <h3 class="competence-subtitle before-html">HTML и CSS</h3>
                 <p class="competence-description">
-              это основа фронтенд разработки. Умение создавать и правильно
+              Это основа фронтенд разработки. Умение создавать и правильно
               структурировать HTML-документы, а также применять стили к этим
               документам на CSS, является обязательным навыком для каждого
               фронтенд разработчика.
@@ -67,7 +121,7 @@
           <li class="competence-item">
             <h3 class="competence-subtitle before-js">JavaScript</h3>
             <p class="competence-description">
-              это язык программирования, который используется для создания
+              Это язык программирования, который используется для создания
               динамического и интерактивного пользовательского интерфейса.
               Хороший фронтенд разработчик должен быть знаком с основами
               JavaScript, включая работу с DOM-деревом, асинхронными запросами и
@@ -79,7 +133,7 @@
               Работа с библиотеками и фреймворками
             </h3>
             <p class="competence-description">
-              фронтенд разработчики должны быть знакомы с различными
+              Фронтенд разработчики должны быть знакомы с различными
               библиотеками и фреймворками, такими как React, Angular, Vue и
               другими. Умение использовать готовые решения, адаптировать их под
               нужды проекта и расширять их функциональность, является очень
@@ -91,23 +145,20 @@
               Разработка для мобильных <br />устройств и адаптивная верстка
             </h3>
             <p class="competence-description">
-              фронтенд разработчики должны быть знакомы с различными
-              библиотеками и фреймворками, такими как React, Angular, Vue и
-              другими. Умение использовать готовые решения, адаптировать их под
-              нужды проекта и расширять их функциональность, является очень
-              важным навыком.
+              Адаптивной называется такая верстка, при которой сайт корректно отображается на различных устройствах благодаря тому, что элементы динамически подстраиваются под различные разрешения экрана.
+Проще говоря, адаптивность — это динамическое складывание блоков, а не уменьшенная версия сайта.
             </p>
           </li>
         </ul>
       </section>
 
       <section class="general-container">
-        <h2 id="services" class="services-title">
+        <h3 id="services" class="services-title">
           Помогаю реализовать широкий спектр задач
-        </h2>
+        </h3>
         <ul class="services-wrapper">
           <li class="service-item">
-            <img src="resources/development.png" alt="разработка" />
+            <img class="service-img" src="resources/development.png" alt="разработка" />
             <div class="service-background">
               <h3 class="service-subtile">Разработка сайта под ключ</h3>
               <p class="service-description">
@@ -119,7 +170,7 @@
             </div>
           </li>
           <li class="service-item">
-            <img src="resources/website_ layout.png" alt="верстка" />
+            <img class="service-img" src="resources/website_ layout.png" alt="верстка" />
             <div class="service-background">
               <h3 class="service-subtile">Верстка сайтов</h3>
               <p class="service-description">
@@ -130,7 +181,7 @@
             </div>
           </li>
           <li class="service-item">
-            <img src="resources/mob_interface.png" alt="интерфейс" />
+            <img class="service-img" src="resources/mob_interface.png" alt="интерфейс" />
             <div class="service-background">
               <h3 class="service-subtile">Разработка мобильного интерфейса</h3>
               <p class="service-description">
@@ -144,23 +195,48 @@
         </ul>
       </section>
 
-      <section id="contacts" class=" contacts">
-        <div class="general-container contacts-wrapper">
-          <p class="contacts-text">для связи:</p>
-          <a class="contact-link" href="#">instagram</a>
-          <a class="contact-link" href="http://t.me/NataSherbataya">telegram</a>
-          <a class="contact-link" href="mailto:nata@gmail.ru">mail</a>
+      <section id="contacts" class="contacts">
+        <div class="contacts-wrapper">
+          <p class="contacts-text">Для связи со мной заполните простую форму</p>
+          <form class="input-wrapper">
+            <input
+              class="contact-input"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+            />
+
+            <input
+              class="contact-input"
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </form>
+          <button class="contacts-btn">Отправить</button>
+          </button>
         </div>
       </section>
     </main>
 
     <footer class="footer-continer">
-      <div class="general-container footer-wrapper">
-        <h2 class="footer-title">
+      <div class="general-container footer-flex-wrapper">
+        <div class="footer-contacts">
+          <p class="footer-title">
           Портфолио фротнтенд-разработчика Саши Орлова
-        </h2>
-        <p class="footer-subtitle">Все права защищены. 2023</p>
-      </div>
+          </p>
+          <div class="footer-contacts_link">
+            <a class="footer-title footer-contact_link" target="_blank" href="#" >mail</a>
+            <a class="footer-title footer-contact_link" target="_blank" href="http://t.me/NataSherbataya">telegram</a>
+            <a class="footer-title footer-contact_link" target="_blank" href="#">instagram</a>
+          </div>
+        </div>
+        
+        <div class="footer-description">
+          <p class="footer-subtitle">Все права защищены. 2023</p>
+          <a class="footer-subtitle footer-contact_link" target="_blank" href="#">политика обработки данных</a></div>
+        </div>
     </footer>
+    <script src="burger.js"></script>
   </body>
 </html>

@@ -1,0 +1,152 @@
+.projects-title {
+  margin-bottom: 40px;
+}
+
+.project-card {
+  position: relative;
+  width: 1150px;
+}
+
+.project_btn {
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  height: 47px;
+  font-family: Manrope;
+  font-size: 20px;
+  background-color: #1bff07;
+  color: #000000;
+  padding: 0 20px 0 20px;
+  border-radius: 100px;
+}
+
+.project-subtitle {
+  position: absolute;
+  bottom: 94px;
+  left: 50px;
+}
+
+.project-description {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.project-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.projects-link {
+  display: inline-block;
+  margin-top: 80px;
+  width: 582px;
+  padding: 56px 86px;
+  height: 153px;
+  border: 1px solid #1bff07;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1bff07;
+}
+
+.link-projects:hover {
+  background-color: #1bff07;
+  color: #000000;
+}
+
+@media (max-width: 1199px) {
+  .projects-title {
+    margin-bottom: 53px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project_btn {
+    top: 40px;
+    left: 35px;
+    height: 38px;
+    font-size: 16px;
+    padding: 0 16px 0 16px;
+    border-radius: 81px;
+  }
+
+  .project-subtitle {
+    bottom: 76px;
+    left: 40px;
+  }
+
+  .project-description {
+    bottom: 40px;
+    left: 40px;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+
+  .project-img {
+    height: 445px;
+  }
+
+  .projects-link {
+    margin-top: 64px;
+    width: 460px;
+    padding: 45px 68px;
+    height: 124px;
+    border-radius: 8px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-title {
+    margin-bottom: 34px;
+  }
+
+  .project_btn {
+    top: 30px;
+    left: 33px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0 20px 0 20px;
+    border-radius: 81px;
+  }
+
+  .project-subtitle {
+    bottom: 76px;
+    left: 35px;
+  }
+
+  .project-description {
+    bottom: 50px;
+    left: 35px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+
+  .projects-link {
+    margin-top: 60px;
+    width: 100%;
+    padding: 29px 0 29px 0;
+    height: 80px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-title {
+    width: 268px;
+  }
+}

@@ -1,3 +1,11 @@
+@import url(footer.css);
+@import url(contacts.css);
+@import url(services.css);
+@import url(competencies.css);
+@import url(projects.css);
+@import url(header.css);
+@import url(burger.css);
+
 * {
   box-sizing: border-box;
 }
@@ -12,26 +20,43 @@ body {
   background-color: black;
 }
 
+.body_fixed {
+  overflow: hidden;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.general-container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.mb-150 {
+  margin-bottom: 150px;
+}
+
 h1,
 h2,
 h3,
 a,
 p,
-div {
+div,
+button {
   letter-spacing: -0.03em;
 }
 
-.projects-title,
-.competencies-title,
-.service-subtile {
+h2 {
   font-size: 55px;
   line-height: 72px;
   color: #ffffff;
 }
 
-.project-subtitle,
-.competence-subtitle,
-.services-title {
+h3 {
   font-size: 35px;
   line-height: 46px;
   color: #ffffff;
@@ -44,286 +69,39 @@ div {
   color: #ffffff;
 }
 
-.general-container {
-  width: 1150px;
-  margin: 0 auto;
-}
-.header {
-  margin-bottom: 150px;
-  position: relative;
-  height: 765px;
-  background-image: url(../resources/photodeveloper.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
+@media (max-width: 1199px) {
+  .general-container {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  h2 {
+    font-size: 45px;
+    line-height: 58px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .competence-description,
+  .service-description {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
-.logo {
-  position: absolute;
-  top: 36px;
-  display: block;
-  font-weight: 700;
-  font-size: 39px;
-  letter-spacing: -0.09em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #1bff07;
-  width: 130px;
-  height: 39px;
-  background-color: #000000;
-  border-radius: 100px;
-  padding-left: 14px;
-}
+@media (max-width: 767px) {
+  .general-container {
+    padding: 0 12px 0 13px;
+  }
 
-.menu {
-  padding-top: 33px;
-  display: flex;
-  justify-content: right;
-  gap: 50px;
-}
+  .mb-150 {
+    margin-bottom: 100px;
+  }
 
-.menu-item {
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.description-subtitle {
-  position: absolute;
-  top: 334px;
-  width: 430px;
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
-}
-
-.description-title {
-  position: absolute;
-  top: 466px;
-  width: 919px;
-  font-size: 80px;
-  line-height: 70px;
-  color: #1bff07;
-}
-
-.projects-container {
-  margin-bottom: 150px;
-}
-
-.projects-title {
-  margin-bottom: 40px;
-}
-
-.project-img {
-  position: relative;
-  width: 1150px;
-  height: 550px;
-}
-
-.project-subtitle {
-  position: absolute;
-  bottom: 94px;
-  left: 50px;
-}
-
-.project-description {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  font-size: 30px;
-  line-height: 39px;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-}
-
-.projects-link {
-  display: block;
-  margin-top: 80px;
-  padding: 56px 85px 58px 86px;
-  width: 582px;
-  height: 153px;
-  border: 1px solid #1bff07;
-  border-radius: 10px;
-  font-size: 30px;
-  line-height: 39px;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: -0.03em;
-  color: #1bff07;
-}
-
-.link-projects:hover {
-  background-color: #1bff07;
-  color: #000000;
-}
-
-.competencies-title {
-  margin-bottom: 48px;
-}
-
-.before-html::before {
-  margin-bottom: 12px;
-  content: "";
-  display: block;
-  width: 45px;
-  height: 44px;
-  background-image: url(../resources/html.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.before-js::before {
-  margin-bottom: 16px;
-  content: "";
-  display: block;
-  width: 45px;
-  height: 44px;
-  background-image: url(../resources/javascript.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.before-library::before {
-  margin-bottom: 16px;
-  content: "";
-  display: block;
-  width: 45px;
-  height: 44px;
-  background-image: url(../resources/library.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.before-adaptiv::before {
-  margin-bottom: 16px;
-  content: "";
-  display: block;
-  width: 45px;
-  height: 44px;
-  background-image: url(../resources/adaptiv.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.competence-item {
-  margin-bottom: 60px;
-}
-
-.competence-item:nth-child(4) {
-  margin-bottom: 150px;
-}
-
-.competence-subtitle {
-  color: #1bff07;
-}
-
-.competence-description {
-  width: 778px;
-  margin-top: 15px;
-}
-
-.services-title {
-  width: 403px;
-}
-
-.services-wrapper {
-  margin-bottom: 150px;
-}
-
-.service-item {
-  margin-top: 74px;
-}
-
-.service-item:nth-last-child(1) {
-  margin-top: 137px;
-}
-
-.service-background {
-  padding: 40px 0 0 40px;
-  width: 1150px;
-  height: 283px;
-  background: #191c19;
-  border-radius: 30px;
-}
-
-.service-subtile {
-  margin-bottom: 15px;
-  color: #1bff07;
-}
-
-.service-description {
-  width: 749px;
-}
-
-.contacts {
-  margin-bottom: 150px;
-  height: 717px;
-  background-image: url(../resources/contacts.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: #191c19;
-  border-radius: 30px;
-}
-
-.contacts-wrapper {
-  padding-top: 320px;
-  padding-bottom: 89px;
-}
-
-.contacts-text {
-  margin-bottom: 28px;
-  font-size: 35px;
-  line-height: 60px;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-}
-
-.contact-link {
-  margin-bottom: 20px;
-  display: block;
-  font-size: 60px;
-  line-height: 60px;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.contact-link:nth-last-child(1) {
-  margin-bottom: 0;
-}
-
-.contact-link:hover {
-  color: #1bff07;
-}
-
-.footer-continer {
-  background: #ffffff;
-  border-radius: 30px 30px 0 0;
-  background-repeat: no-repeat;
-}
-
-.footer-wrapper {
-  padding-top: 76px;
-  padding-bottom: 24px;
-}
-
-.footer-title {
-  margin-bottom: 66px;
-  font-family: "Manrope";
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 30px;
-  letter-spacing: -0.03em;
-  color: #000000;
-}
-
-.footer-subtitle {
-  font-family: "Manrope";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  letter-spacing: -0.03em;
-  color: #000000;
-  opacity: 0.5;
+  h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
 }

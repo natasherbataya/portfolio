@@ -1,0 +1,123 @@
+.burger-btn {
+  display: none;
+}
+
+.burger {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.burger_open {
+  visibility: visible;
+}
+
+.burger__content {
+  width: 362px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 60px 0 0 30px;
+  background-color: black;
+  transition: transform 0.3s linear;
+  transform: translateX(100%);
+}
+
+.burger_open .burger__content {
+  transform: translateX(0);
+}
+
+.logo_burger {
+  display: block;
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: -0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #1bff07;
+  width: 130px;
+  background-color: #000000;
+  border-radius: 100px;
+  border: 1px solid #1bff07;
+}
+
+.burger__nav {
+  margin-top: 44px;
+  margin-bottom: 91px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.burger__nav-link {
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.burger__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.burger__contact-text {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.burger__contact-link {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .burger-btn {
+    position: absolute;
+    top: 38px;
+    right: 16px;
+    z-index: 100;
+    display: block;
+    background-image: url(../resources/burger_open.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 36px;
+    height: 36px;
+  }
+
+  .burger-btn_open {
+    position: absolute;
+    top: 38px;
+    right: 16px;
+    z-index: 100;
+    display: block;
+    background-image: url(../resources/burger_close.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger-btn {
+    right: 13px;
+  }
+}
