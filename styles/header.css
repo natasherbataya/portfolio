@@ -41,6 +41,10 @@
   text-decoration: none;
 }
 
+.menu-item:hover {
+  color: #1bff07;
+}
+
 .description-subtitle {
   position: absolute;
   top: 334px;

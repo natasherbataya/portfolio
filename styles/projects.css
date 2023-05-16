@@ -56,9 +56,9 @@
   background-color: #1bff07;
 }
 
-.link-projects:hover {
-  background-color: #1bff07;
-  color: #000000;
+.projects-link:hover {
+  background-color: #000000;
+  color: #1bff07;
 }
 
 @media (max-width: 1199px) {
